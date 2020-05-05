@@ -1,0 +1,57 @@
+.movie-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  &__container {
+    display: block;
+  }
+
+  &__poster-container {
+    height: 470px;
+  }
+
+  &__poster {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+
+  &__title-container {
+    padding: 10px;
+  }
+
+  &__faction {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__buttons-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-wrapper {
+    justify-content: center;
+  }
+  .movie {
+    margin-right: 0;
+  }
+}
